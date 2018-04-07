@@ -34,7 +34,7 @@ Time spent: **5** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.6
-  - [x] GIF Walkthrough: <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek7/master/3XSS.gif" width="800">
+  - [x] GIF Walkthrough: <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek7/master/3aXSS.gif" width="800">
   - [x] Steps to recreate: 
     - Log in as admin
     - Create new post
