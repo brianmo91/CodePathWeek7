@@ -6,15 +6,19 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+1. (Required) WordPress  3.7-4.4 - Authenticated Cross-Site Scripting (XSS)
+  - [x] Summary: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.6
+  - [x] GIF Walkthrough: <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek7/master/1XSS.gif" width="800">
+  - [x] Steps to recreate: 
+    - Log in as admin
+    - Create new post
+    - Post link and add alert script. Ex: http://www.example.com/wp-admin/customize.php?theme=<svg onload=alert('HACKED')>
+    - Publish and view page
+  - [x] Affected source code: 
+    - [Link 1](https://github.com/WordPress/WordPress/commit/7ab65139c6838910426567849c7abed723932b87)
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
