@@ -6,45 +6,42 @@ Time spent: **5** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) WordPress  3.7-4.4 - Authenticated Cross-Site Scripting (XSS)
-  - [x] Summary: 
-    - Vulnerability types: XSS
-    - Tested in version: 4.2
-    - Fixed in version: 4.2.6
-  - [x] GIF Walkthrough: <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek7/master/1XSS.gif" width="800">
-  - [x] Steps to recreate: 
-    - Log in as admin
-    - Create new post
-    - Post link and add alert script. Ex: http://www.example.com/wp-admin/customize.php?theme=<svg onload=alert('HACKED')>
-    - Publish and view page
-  - [x] Affected source code: 
-    - [Link 1](https://github.com/WordPress/WordPress/commit/7ab65139c6838910426567849c7abed723932b87)
-
-2. (Required) WordPress <= 4.2 - Unauthenticated Stored Cross-Site Scripting (XSS)
+1. (Required) WordPress <= 4.2 - Unauthenticated Stored Cross-Site Scripting (XSS)
   - [x] Summary: 
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.1
-  - [x] GIF Walkthrough: <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek7/master/2XSS.gif" width="800">
+  - [x] GIF Walkthrough: <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek7/master/1XSS.gif" width="800">
   - [x] Steps to recreate: 
     - Comment on post with:
      `<a title='x onmouseover=alert(1) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>`
     - Text must be over 64 kb
     - Wait for admin to approve of comment
 
+2. (Required) WordPress 4.1-4.2.1 - Unauthenticated Genericons Cross-Site Scripting (XSS)
+  - [x] Summary: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.2
+  - [x] GIF Walkthrough: <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek7/master/2XSS.gif" width="800">
+  - [x] Steps to recreate: 
+    - Create new post
+    - Post `http://www.example.com/wp-content/themes/twentyfifteen/genericons/example.html#1<img/ src=1 onerror= alert(1)>`
+    - Publish and view page
+
 3. (Required) WordPress  3.7-4.4 - Authenticated Cross-Site Scripting (XSS)
   - [x] Summary: 
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.6
-  - [x] GIF Walkthrough: <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek7/master/1XSS.gif" width="800">
+  - [x] GIF Walkthrough: <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek7/master/3XSS.gif" width="800">
   - [x] Steps to recreate: 
     - Log in as admin
     - Create new post
-    - Post link and add alert script. Ex: http://www.example.com/wp-admin/customize.php?theme=<svg onload=alert('HACKED')>
+    - Post `http://www.example.com/wp-admin/customize.php?theme=<svg onload=alert('HACKED')>`
     - Publish and view page
   - [x] Affected source code: 
-    - [Link 1](https://github.com/WordPress/WordPress/commit/7ab65139c6838910426567849c7abed723932b87)
+    - [Link](https://github.com/WordPress/WordPress/commit/7ab65139c6838910426567849c7abed723932b87)
 
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
