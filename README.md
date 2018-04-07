@@ -1,6 +1,6 @@
 # Project 7 - WordPress Pentesting
 
-Time spent: **X** hours spent in total
+Time spent: **5** hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
@@ -19,6 +19,7 @@ Time spent: **X** hours spent in total
     - Publish and view page
   - [x] Affected source code: 
     - [Link 1](https://github.com/WordPress/WordPress/commit/7ab65139c6838910426567849c7abed723932b87)
+
 2. (Required) WordPress <= 4.2 - Unauthenticated Stored Cross-Site Scripting (XSS)
   - [x] Summary: 
     - Vulnerability types: XSS
@@ -30,7 +31,8 @@ Time spent: **X** hours spent in total
      `<a title='x onmouseover=alert(1) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>`
     - Text must be over 64 kb
     - Wait for admin to approve of comment
-1. (Required) WordPress  3.7-4.4 - Authenticated Cross-Site Scripting (XSS)
+
+3. (Required) WordPress  3.7-4.4 - Authenticated Cross-Site Scripting (XSS)
   - [x] Summary: 
     - Vulnerability types: XSS
     - Tested in version: 4.2
@@ -43,6 +45,7 @@ Time spent: **X** hours spent in total
     - Publish and view page
   - [x] Affected source code: 
     - [Link 1](https://github.com/WordPress/WordPress/commit/7ab65139c6838910426567849c7abed723932b87)
+
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
@@ -52,6 +55,7 @@ Time spent: **X** hours spent in total
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
@@ -79,7 +83,7 @@ Describe any challenges encountered while doing the work
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2018] [Brian Mo]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
