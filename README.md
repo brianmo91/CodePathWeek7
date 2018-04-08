@@ -59,19 +59,19 @@ Time spent: **5** hours spent in total
   - [x] Affected source code:
     - [Link](https://core.trac.wordpress.org/changeset/36435)
 
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php) 
-
-## Assets
-
-List any additional assets, such as scripts or files
+5. (Optional) WordPress 3.3-4.7.4 - Large File Upload Error XSS
+  - [x] Summary: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.15
+  - [x] GIF Walkthrough: <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek7/master/5XSS.gif" width="800">
+  - [x] Steps to recreate: 
+    - Create a 20mb png file
+    - Name file as `Dinosaurs secret life<img src=x onerror=alert('XSS')>.png`
+    - Log in to wordpress as admin and go to add new media page
+    - Select/Drag the png file onto page
+  - [x] Affected source code:
+    - [Link](https://github.com/WordPress/WordPress/commit/8c7ea71edbbffca5d9766b7bea7c7f3722ffafa6) 
 
 ## Resources
 
@@ -79,10 +79,6 @@ List any additional assets, such as scripts or files
 - [WordPress Developer Reference](https://developer.wordpress.org/reference/)
 
 GIFs created with [LiceCap](http://www.cockos.com/licecap/).
-
-## Notes
-
-Describe any challenges encountered while doing the work
 
 ## License
 
