@@ -68,7 +68,7 @@ Time spent: **5** hours spent in total
   - [x] Steps to recreate: 
     - Create a 20mb png file
     - Name file as `Dinosaurs secret life<img src=x onerror=alert('XSS')>.png`
-    - Log in to wordpress as admin and go to add new media page
+    - Log in to wordpress as admin and go to add new media page
     - Select/Drag the png file onto page
   - [x] Affected source code:
     - [Link](https://github.com/WordPress/WordPress/commit/8c7ea71edbbffca5d9766b7bea7c7f3722ffafa6) 
