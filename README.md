@@ -43,15 +43,21 @@ Time spent: **5** hours spent in total
   - [x] Affected source code: 
     - [Link](https://github.com/WordPress/WordPress/commit/7ab65139c6838910426567849c7abed723932b87)
 
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+4. (Optional) WordPress 3.7-4.4.1 - Local URIs Server Side Request Forgery (SSRF)
+  - [x] Summary: 
+    - Vulnerability types: SSRF or CSRF
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.7
+  - [x] GIF Walkthrough: <img src="https://raw.githubusercontent.com/cheezm91/CodePathWeek7/master/4CSRF.gif" width="800">
+  - [x] Steps to recreate: 
+    - Create malicious site with content `<img src="//wpdistillery.vm/wp-admin/press-this.php?u=http://0.0.0.0:8080&url-scan-submit=Scan" />`
+    - Lure/force the logged in user to visit page
+    - This forces the victim to send unwanted scrape/scan requests to servers private 127.0.0.1:PORT or localhost:PORT
+      - Victim sends a unwanted request to their server requesting a internal server address to be hit. 
+      - Server sends get request to 0.0.0.0:8080
+      - Servers private 127.0.0.1 answers back.
+  - [x] Affected source code:
+    - [Link](https://core.trac.wordpress.org/changeset/36435)
 
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
